@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+body {
+    height: 100vh;
+    position: relative;
+    background: #ffffff;
+    color: #000000;
+}
+
+.container1 {
+    width: 80%;
+    /* position: absolute; */
+    padding-top: 5px;
+	margin-left: 150px;
+	margin-right: 100px;
+
+}
+
+.container1 h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #009de0;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.container1 .services {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container1 .services .card {
+    width: 330px;
+    text-align: center;
+    background: #ffffff;
+    padding: 20px 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container1 .services .card:hover {
+    background: rgba(205, 205, 205, 0.589);
+    color: #000000;
+}
+
+.container1 .services .card .content {
+    transition: 0.3s;
+}
+
+.container1 .services .card:hover .content {
+    transform: scale(1.07);
+}
+
+.container1 .services .card .content .icon {
+    padding: 5px 0;
+    color:rgb(30, 159, 210);
+}
+
+
+.container1 .services .card .content .icon i {
+    font-size: 40px;
+}
+
+.container1 .services .card:hover .content .title {
+    color: #000000;
+}
+
+.container1 .services .card .content .title {
+    padding: 5px 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: chocolate;
+    transition: 0.3s;
+}
+
+
+
+@media screen and (min-width:769px) and (max-width:1025px) {
+ 
+
+    .container1 {
+        padding-top: 50px;
+    }
+
+
+}
+
+@media screen and (min-width:426px) and (max-width:769px) {
+   
+    .container1 {
+        padding-top: 40px;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:426px) {
+  
+    .container1 {
+        padding-top: 45px;
+    }
+}
+
+@media screen and (min-width:120px) and (max-width:321px) {
+  
+    .container1 {
+        padding-top: 48px;
+    }
+    .container1 h2 {
+        font-size: 25px;
+    }
+}

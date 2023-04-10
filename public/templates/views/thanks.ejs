@@ -1,0 +1,51 @@
+<%- include('../partials/body.ejs') %>
+
+<!-- header section start -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap-grid.min.css"
+    integrity="sha512-JQksK36WdRekVrvdxNyV3B0Q1huqbTkIQNbz1dlcFVgNynEMRl0F8OSqOGdVppLUDIvsOejhr/W5L3G/b3J+8w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- /////////////////////////nav//////////////////////////////////////////// -->
+</head>
+<style>
+.submit{
+    text-align: center;
+    margin: 40vh 150px  0 150px;
+    border: 1px solid black;
+    box-shadow: 0 0.8em 8.5em 2em #3B71CA;
+    border-radius: 50px;
+}
+.submit h1{
+    padding:20px 0;
+    color: #14A44D;
+}
+.submit h3{
+    padding: 10px 0 ;
+    font-weight: bolder;
+}
+p{
+    padding: 10px 0 ;
+    font-weight: bolder;
+}
+a{
+    text-decoration: none;
+    font-size: 30px;
+}
+a i:hover{
+    color: black;
+}
+</style>
+<body>
+    <main data-aos="fade-up"   data-aos-offset="200" data-aos-delay="500" data-aos-duration="5000">
+       <section class="submit">
+         <h1>Successfully Sent</h1>
+        <h3>We Contact You Shortly</h3> <br>
+       <p> Go back <a href="/"><i class="fa-solid fa-house"></i></a></p>
+       </section>
+    </main>
+      <!-- {{!-- aos animation --}} -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+</script>
+    </body>
+    </html>

@@ -1,0 +1,45 @@
+<%- include('../partials/body.ejs') %>
+
+<link rel="stylesheet" href="/css/style.css">
+<%- include('../partials/loader.ejs') %>
+
+  <%- include('../partials/navbar.ejs') %>
+  <div class="container mt-5">
+    <form action="/hire" method="post" role="form" class="php-email-form">
+      <div class="row">
+
+        <h1 class="text-center mt-5 text-dark">Hire Us </h1>
+        <div class="col-md-6 mt-3">
+          <input type="text" name="username" class="form-control mt-3" id="name" placeholder="Your Name" required>
+          <input type="text" class="form-control mt-3" name="usernumber" id="number" placeholder="Your Number" required>
+        </div>
+        <div class="col-md-6 mt-3">
+          <input type="email" class="form-control mt-3" name="useremail" id="email" placeholder="Your Email" required>
+          <input type="text" class="form-control mt-3" name="projectname" id="project" placeholder="Project Name">
+        </div>
+        <div class="col-md-12 mt-3">
+          <select name="projecttech" class="form-control" id="project" l required>
+            <option value="none" disabled selected class="text-secondary">--Select Project Technology--</option>
+            <option value="Node.js">Node.js</option>
+            <option value="Web Designing">Web Designing</option>
+            <option value="Wordpress">Wordpress</option>
+            <option value="Python">Python</option>
+            <option value="React">React</option>
+          </select>
+        </div>
+        <div class="col-md-12 mt-3">
+          <textarea class="form-control" name="dic" rows="5" placeholder="Project Description" required></textarea>
+        </div>
+        <div class="col-md-5"></div>
+        <div class="col-md-2">
+          <button class="btn btn-outline-primary fs-4 float-center mt-3 w-100 mb-3" type="submit">Send Message</button>
+        </div>
+        <div class="col-md-5"></div>
+    </form>
+  </div>
+  </div>
+
+  <%- include('../partials/footer.ejs') %>
+</body>
+
+</html>

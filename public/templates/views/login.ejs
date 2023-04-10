@@ -1,0 +1,41 @@
+<%- include('../partials/body.ejs') %>
+<link rel="stylesheet" href="/css/style.css">
+<%- include('../partials/loader.ejs') %>
+
+<%- include('../partials/navbar.ejs') %>
+
+<!-- style-sheet -->
+    <div class="container">
+        <div class="row">
+            <img src="/images/3094352.jpg" width="500px"  class="img-thumbnail col-6 mt-5 " alt="...">
+            <div class="col-6">
+                <p class="text-mg  fw-bolder fs-1 row-6 mt-5 pb-0 p-4 ">Welcome Back</p>
+                <form class="px-4 py-3" method="post">
+                    <div class="mb-3">
+                      <label for="exampleDropdownFormEmail1" class="form-label">Username</label>
+                      <input type="text" name="username" class="form-control" id="exampleDropdownFormEmail1" placeholder="Your Username">
+                    </div>
+                    <div class="mb-1">
+                      <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                      <input type="password" name="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                    </div>
+                    <div class="mb-2 mt-2">
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input " id="dropdownCheck">
+                        <label class="form-check-label" for="dropdownCheck">
+                          Remember me
+                        </label>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-danger mt-2">Sign in</button>
+                  </form>
+                  <div class="ms-5 ">
+                 <p>New around here? <a class="text-primary" href="/signup"> Sign up</a></p>
+                  <a class="" href="/reset">Forgot password?</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <%- include('../partials/footer.ejs') %>
+</body>
