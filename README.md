@@ -57,5 +57,5 @@ Open `a/nice/path/to/a.file` then edit it with your settings. You will need:
 ## Running the project
 
     $ npm start
-    $ or
+     or
     $ npm run dev
