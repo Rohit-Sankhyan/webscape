@@ -1,8 +1,8 @@
-# webscape
-to start
-npm run dev
-and open broswer and type localhost/8000
- 
+
+
+
+
+
 # Webscape
 
 A nice project with a nice description
